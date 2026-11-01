@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS gestion_etudiants;
+USE gestion_etudiants;
+
+CREATE TABLE IF NOT EXISTS etudiant (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero VARCHAR(20) NOT NULL UNIQUE,
+    nom VARCHAR(50) NOT NULL,
+    prenom VARCHAR(50) NOT NULL,
+    email VARCHAR(100)
+);
